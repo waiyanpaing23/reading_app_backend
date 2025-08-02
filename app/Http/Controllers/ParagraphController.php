@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ParagraphDetailResource;
 use App\Models\Paragraph;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,7 @@ class ParagraphController extends Controller
         $paragraphs = Paragraph::with('questions')->where('level', $request->level)->get();
 
         return response()->json([
-            'data' => $paragraphs
+            'data' => ParagraphDetailResource::collection($paragraphs)
         ], 200);
     }
 }

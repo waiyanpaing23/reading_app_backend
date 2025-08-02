@@ -15,10 +15,33 @@ class OptionSeeder extends Seeder
     public function run(): void
     {
         DB::table('options')->insert([
+            // question 1
             [
                 'question_id' => 1,
                 'content' => 'true',
                 'is_correct' => true,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 1,
+                'content' => 'false',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 1,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 2
+            [
+                'question_id' => 2,
+                'content' => 'true',
+                'is_correct' => false,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -30,9 +53,39 @@ class OptionSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'question_id' => 2,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 3
+            [
                 'question_id' => 3,
                 'content' => 'true',
                 'is_correct' => true,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 3,
+                'content' => 'false',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 3,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 4
+            [
+                'question_id' => 4,
+                'content' => 'true',
+                'is_correct' => false,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -44,6 +97,21 @@ class OptionSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'question_id' => 4,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 5
+            [
+                'question_id' => 5,
+                'content' => 'true',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
                 'question_id' => 5,
                 'content' => 'false',
                 'is_correct' => true,
@@ -51,9 +119,47 @@ class OptionSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'question_id' => 5,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 6
+            [
                 'question_id' => 6,
                 'content' => 'true',
                 'is_correct' => true,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 6,
+                'content' => 'false',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 6,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 7
+            [
+                'question_id' => 7,
+                'content' => 'false',
+                'is_correct' => true,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 7
+            [
+                'question_id' => 7,
+                'content' => 'true',
+                'is_correct' => false,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
@@ -65,9 +171,31 @@ class OptionSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ],
             [
+                'question_id' => 7,
+                'content' => 'not given',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // question 8
+            [
                 'question_id' => 8,
                 'content' => 'true',
                 'is_correct' => true,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 8,
+                'content' => 'false',
+                'is_correct' => false,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'question_id' => 8,
+                'content' => 'not given',
+                'is_correct' => false,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ]

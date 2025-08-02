@@ -18,7 +18,6 @@ class DatabaseSeeder extends Seeder
             PassageSeeder::class,
             QuestionTypeSeeder::class,
             ParagraphSeeder::class,
-            QuestionTypeSeeder::class,
             QuestionSeeder::class,
             OptionSeeder::class
         ]);

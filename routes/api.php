@@ -13,6 +13,7 @@ Route::get('/user', function (Request $request) {
 
 // Question Routes
 Route::get('/questions/paragraph/{id}', [QuestionController::class, 'getByParagraphId']);
+Route::get('questions/passage/{id}', [QuestionController::class, 'getByPassageId']);
 Route::get('/questions/type/{id}', [QuestionController::class, 'getByQuestionType']);
 
 // Passage Routes

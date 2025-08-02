@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\PassageResource;
 use App\Models\Paragraph;
 use App\Models\Passage;
 use Illuminate\Http\Request;
@@ -13,7 +14,7 @@ class PassageController extends Controller
     public function index(Request $request)
     {
         $passages = Passage::with('paragraphs')->get();
-        
+
         return response()->json([
             'data' => $passages
         ], 200);
@@ -74,7 +75,7 @@ class PassageController extends Controller
         }
 
         return response()->json([
-            'data' => $passage
+            'data' => PassageResource::make($passage)
         ]);
     }
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\QuestionResource;
 use App\Services\QuestionService;
 use App\Models\Question;
 use Illuminate\Http\Request;
@@ -91,7 +92,7 @@ class QuestionController extends Controller
             ], 404);
         }
         return response()->json([
-            'data' => $questions
+            'data' => QuestionResource::collection($questions)
         ], 200);
     }
 
@@ -105,7 +106,7 @@ class QuestionController extends Controller
             ], 404);
         }
         return response()->json([
-            'data' => $questions
+            'data' => QuestionResource::collection($questions)
         ], 200);
     }
 
@@ -119,7 +120,7 @@ class QuestionController extends Controller
             ], 404);
         }
         return response()->json([
-            'data' => $questions
+            'data' => QuestionResource::collection($questions)
         ], 200);
     }
 
@@ -133,7 +134,7 @@ class QuestionController extends Controller
             ], 404);
         }
         return response()->json([
-            'data' => $questions
+            'data' => QuestionResource::collection($questions)
         ], 200);
     }
 }
