@@ -2,13 +2,14 @@
 
 namespace App\Services;
 
+use App\Models\Paragraph;
 use App\Models\Question;
 
 class QuestionService
 {
     public function getQuestions()
     {
-        return Question::with('options')->get();
+        return Paragraph::with('questions')->get();
     }
 
     public function getByPassageId($id)
@@ -28,6 +29,16 @@ class QuestionService
 
     public function getByQuestionTypeId($id)
     {
-        return Question::with(['paragraph', 'options'])->where('question_type_id', $id)->get();
+        $paragraphs = Paragraph::with(['questions' => function ($query) use ($id) {
+            $query->where('question_type_id', $id);
+        }])
+        ->whereHas('questions', function ($query) use ($id) {
+            $query->where('question_type_id', $id);
+        })
+        ->inRandomOrder()
+        ->limit(10)
+        ->get();
+
+        return $paragraphs;
     }
 }

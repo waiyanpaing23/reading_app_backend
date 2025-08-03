@@ -17,10 +17,10 @@ class QuestionResource extends JsonResource
         return [
             'id' => $this->id,
             'passage_id' => $this->passage_id,
+            'paragraph_id' => $this->paragraph_id,
             'question_type_id' => $this->question_type_id,
             'content' => $this->content,
             'section' => $this->section,
-            'strategy_id' => $this->strategy_id,
             'time_limit' => $this->time_limit,
             'hints' => $this->hints,
             'keywords' => $this->keywords,

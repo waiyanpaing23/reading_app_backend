@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ParagraphDetailResource;
 use App\Http\Resources\QuestionResource;
 use App\Services\QuestionService;
 use App\Models\Question;
@@ -112,15 +113,15 @@ class QuestionController extends Controller
 
     public function getByQuestionType($id)
     {
-        $questions = $this->questionService->getByQuestionTypeId($id);
+        $paragraphs = $this->questionService->getByQuestionTypeId($id);
 
-        if (!$questions) {
+        if (!$paragraphs) {
             return response()->json([
                 'error' => 'Questions not found'
             ], 404);
         }
         return response()->json([
-            'data' => QuestionResource::collection($questions)
+            'data' => ParagraphDetailResource::collection($paragraphs)
         ], 200);
     }
 

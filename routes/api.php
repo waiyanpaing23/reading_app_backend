@@ -25,3 +25,5 @@ Route::delete('/passages/{id}', [PassageController::class, 'destroy']);
 // Paragraph Routes
 Route::get('/paragraphs', [ParagraphController::class, 'index']);
 Route::get('/strategies', [StrategyController::class, 'index']);
+Route::get('/strategies/skimming', [StrategyController::class, 'skimmingPractice']);
+Route::get('/strategies/scanning', [StrategyController::class, 'scanningPractice']);

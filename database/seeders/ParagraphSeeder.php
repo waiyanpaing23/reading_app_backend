@@ -43,6 +43,38 @@ class ParagraphSeeder extends Seeder
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ],
+            // 5
+            [
+                'passage_id' => null,
+                'content' => 'Plastic pollution has become a global environmental crisis. Millions of tons of plastic waste end up in oceans each year, harming marine life and entering the food chain. While recycling efforts have increased, experts emphasize that reducing plastic usage at the source is the most effective long-term solution.',
+                'order' => null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // 6
+            [
+                'passage_id' => null,
+                'content' => 'Honeybees are crucial to the ecosystem due to their role in pollination. They help many plants reproduce, including crops that humans rely on for food. However, honeybee populations have been declining due to factors like pesticide use, habitat loss, and climate change.',
+                'order' => null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // 7
+            [
+                'passage_id' => null,
+                'content' => 'In recent decades, urban green spaces have become increasingly important in city planning. These areas not only provide recreational spots for citizens but also improve air quality, reduce heat, and support mental well-being. Cities like Singapore and Copenhagen have been praised for their efforts in integrating parks, vertical gardens, and tree-lined streets into their urban environments.',
+                'order' => null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            // 8
+            [
+                'passage_id' => null,
+                'content' => 'Marie Curie’s groundbreaking work in the late 19th and early 20th centuries revolutionized the field of science. Alongside her husband Pierre, she discovered the radioactive elements polonium and radium, contributing significantly to the understanding of atomic structure. Despite facing gender discrimination in academia, she persisted in her research and became the first woman to receive a Nobel Prize. Later, she made history again by winning a second Nobel Prize—this time in a different scientific field—becoming the only person ever to achieve this distinction.',
+                'order' => null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
         ]);
     }
 }

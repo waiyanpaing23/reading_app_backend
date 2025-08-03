@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PassageSeeder::class,
             QuestionTypeSeeder::class,
+            StrategySeeder::class,
             ParagraphSeeder::class,
             QuestionSeeder::class,
             OptionSeeder::class
